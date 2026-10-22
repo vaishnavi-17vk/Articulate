@@ -1,0 +1,30 @@
+
+/* Global styles and the design tokens (colours and fonts), defined once with Tailwind's @theme. */
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f2eee4;
+  --color-surface: #f9f6ee;
+  --color-ink: #1f2530;
+  --color-ink-soft: #565b67;
+  --color-rule: #cfc7b2;
+  --color-amber: #a3540f;
+  --color-cream: #fbf8f1;
+  --color-danger: #9b2c2c;
+
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-sans: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  background-color: var(--color-paper);
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.55;
+}
